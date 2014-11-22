@@ -1,0 +1,9 @@
+EN lcd NULL C:/print_texto/lcd/lcd.vhd sub00/vhpl05 1416674842
+EN rom NULL C:/print_texto/lcd/rom.vhd sub00/vhpl00 1416674844
+EN lcd_top NULL C:/print_texto/lcd/lcd_top.vhd sub00/vhpl07 1416674846
+AR rom rom_imp C:/print_texto/lcd/rom.vhd sub00/vhpl01 1416674845
+AR lcd_top fsm C:/print_texto/lcd/lcd_top.vhd sub00/vhpl08 1416674847
+AR timer data_flow C:/print_texto/lcd/timer.vhd sub00/vhpl04 1416674841
+AR lcd fsmd C:/print_texto/lcd/lcd.vhd sub00/vhpl06 1416674843
+AR timer behavioral C:/print_texto/lcd/timer.vhd sub00/vhpl03 1416673327
+EN timer NULL C:/print_texto/lcd/timer.vhd sub00/vhpl02 1416674840

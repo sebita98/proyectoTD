@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+xst -intstyle ise -ifn "C:/print_texto/lcd/rom.xst" -ofn "C:/print_texto/lcd/rom.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 rom.ngc rom.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o rom_map.ncd rom.ngd rom.pcf 
+par -w -intstyle ise -ol high -t 1 rom_map.ncd rom.ncd rom.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml rom.twx rom.ncd -o rom.twr rom.pcf 

@@ -1,0 +1,27 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.49d
+#Current Working Directory:
+#:D   C:\print_texto\lcd
+#Date/Time:
+#:T   Sat Nov 22 14:52:18 2014
+#------------------------------
+	#Reading lcd_top.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
+	#   "lcd_top" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+	#Design creation date: 2014.11.22.16.49.09
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'lcd_e'
+	#3
+unselect comp 'lcd_e'
+	#4
+select -k comp 'lcd_rs'
+	#5
+unselect comp 'lcd_rs'
+	#6
+select -k comp 'lcd_data_in<2>'

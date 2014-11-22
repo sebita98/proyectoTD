@@ -1,0 +1,107 @@
+#:C39    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.49d
+#Current Working Directory:
+#:D   C:\print_texto\lcd
+#Date/Time:
+#:T   Sat Nov 22 14:18:47 2014
+#------------------------------
+	#Reading rom.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
+	#   "rom" is an NCD, version 3.2, device xc3s500e, package fg320, speed -5
+	#Design creation date: 2014.11.22.16.17.02
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'addr<0>'
+	#3
+unselect comp 'addr<0>'
+	#4
+select -k comp 'addr<1>'
+	#5
+unselect comp 'addr<1>'
+	#6
+select -k comp 'dato<0>'
+	#7
+unselect comp 'dato<0>'
+	#8
+select -k comp 'dato<1>'
+	#9
+unselect comp 'dato<1>'
+	#10
+select -k comp 'dato<2>'
+	#11
+unselect comp 'dato<2>'
+	#12
+select -k comp 'dato<3>'
+	#13
+unselect comp 'dato<3>'
+	#14
+select -k comp 'dato<4>'
+	#15
+unselect comp 'dato<4>'
+	#16
+select -k comp 'dato<5>'
+	#17
+unselect comp 'dato<5>'
+	#18
+select -k comp 'addr<0>'
+	#19
+unselect -all
+	#20
+unselect -all
+	#21
+select comp 'addr<0>'
+	#comp "addr<0>",  site "N17",  bonded type = IBUF,  pad name = IPAD108,  pin name = N17  (RPM grid X141Y14)
+	#22
+unselect -all
+	#23
+select comp 'addr<0>'
+	#comp "addr<0>",  site "N17",  bonded type = IBUF,  pad name = IPAD108,  pin name = N17  (RPM grid X141Y14)
+	#24
+post block
+	#25
+unselect -all
+	#26
+unselect -all
+	#27
+select -k comp 'dato<2>'
+	#28
+unselect comp 'dato<2>'
+	#29
+select -k comp 'dato<3>'
+	#30
+unselect comp 'dato<3>'
+	#31
+select -k comp 'dato<4>'
+	#32
+unselect comp 'dato<4>'
+	#33
+select -k comp 'dato<5>'
+	#34
+unselect comp 'dato<5>'
+	#35
+select -k comp 'dato<6>'
+	#36
+unselect comp 'dato<6>'
+	#37
+select -k comp 'dato<7>'
+	#38
+unselect comp 'dato<7>'
+	#39
+select -k comp 'dato_2_OBUF'
+	#40
+unselect comp 'dato_2_OBUF'
+	#41
+select -k comp 'dato<2>'
+	#42
+unselect comp 'dato<2>'
+	#43
+select -k comp 'dato<3>'
+	#44
+unselect comp 'dato<3>'
+	#45
+select -k comp 'dato<5>'
