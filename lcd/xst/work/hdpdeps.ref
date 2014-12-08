@@ -1,22 +1,27 @@
-V3 15
-FL C:/print_texto/lcd/lcd.vhd 2014/11/22.14:26:52 P.49d
-EN work/lcd 1416674842 FL C:/print_texto/lcd/lcd.vhd PB ieee/std_logic_1164 1354696159 \
-      PB ieee/NUMERIC_STD 1354696164
-AR work/lcd/fsmd 1416674843 \
-      FL C:/print_texto/lcd/lcd.vhd EN work/lcd 1416674842 CP work/timer
-FL C:/print_texto/lcd/lcd_top.vhd 2014/11/22.14:47:03 P.49d
-EN work/lcd_top 1416674846 FL C:/print_texto/lcd/lcd_top.vhd \
+V3 19
+FL /home/seba/Documents/shared/lcd/lcd.vhd 2014/11/22.13:26:52 P.49d
+EN work/lcd 1418080946 FL /home/seba/Documents/shared/lcd/lcd.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
-AR work/lcd_top/fsm 1416674847 \
-      FL C:/print_texto/lcd/lcd_top.vhd EN work/lcd_top 1416674846 CP work/lcd \
-      CP work/rom
+AR work/lcd/fsmd 1418080947 \
+      FL /home/seba/Documents/shared/lcd/lcd.vhd EN work/lcd 1418080946 \
+      CP work/timer
+FL /home/seba/Documents/shared/lcd/lcd_top.vhd 2014/12/08.20:22:21 P.49d
+EN work/lcd_top 1418080950 FL /home/seba/Documents/shared/lcd/lcd_top.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
+AR work/lcd_top/fsm 1418080951 \
+      FL /home/seba/Documents/shared/lcd/lcd_top.vhd EN work/lcd_top 1418080950 \
+      CP work/lcd CP work/rom
+FL /home/seba/Documents/shared/lcd/rom.vhd 2014/11/22.13:45:06 P.49d
+EN work/rom 1418080948 FL /home/seba/Documents/shared/lcd/rom.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
+AR work/rom/rom_imp 1418080949 \
+      FL /home/seba/Documents/shared/lcd/rom.vhd EN work/rom 1418080948
+FL /home/seba/Documents/shared/lcd/timer.vhd 2014/11/22.13:22:31 P.49d
+EN work/timer 1418080944 FL /home/seba/Documents/shared/lcd/timer.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
+AR work/timer/data_flow 1418080945 \
+      FL /home/seba/Documents/shared/lcd/timer.vhd EN work/timer 1418080944
+FL C:/print_texto/lcd/lcd.vhd 2014/11/22.14:26:52 P.49d
+FL C:/print_texto/lcd/lcd_top.vhd 2014/11/22.14:47:03 P.49d
 FL C:/print_texto/lcd/rom.vhd 2014/11/22.14:45:06 P.49d
-EN work/rom 1416674844 FL C:/print_texto/lcd/rom.vhd PB ieee/std_logic_1164 1354696159 \
-      PB ieee/NUMERIC_STD 1354696164
-AR work/rom/rom_imp 1416674845 \
-      FL C:/print_texto/lcd/rom.vhd EN work/rom 1416674844
 FL C:/print_texto/lcd/timer.vhd 2014/11/22.14:22:31 P.49d
-EN work/timer 1416674840 FL C:/print_texto/lcd/timer.vhd PB ieee/std_logic_1164 1354696159 \
-      PB ieee/NUMERIC_STD 1354696164
-AR work/timer/data_flow 1416674841 \
-      FL C:/print_texto/lcd/timer.vhd EN work/timer 1416674840

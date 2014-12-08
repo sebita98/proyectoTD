@@ -1,9 +1,9 @@
-EN lcd NULL C:/print_texto/lcd/lcd.vhd sub00/vhpl05 1416674842
-EN rom NULL C:/print_texto/lcd/rom.vhd sub00/vhpl00 1416674844
-EN lcd_top NULL C:/print_texto/lcd/lcd_top.vhd sub00/vhpl07 1416674846
-AR rom rom_imp C:/print_texto/lcd/rom.vhd sub00/vhpl01 1416674845
-AR lcd_top fsm C:/print_texto/lcd/lcd_top.vhd sub00/vhpl08 1416674847
-AR timer data_flow C:/print_texto/lcd/timer.vhd sub00/vhpl04 1416674841
-AR lcd fsmd C:/print_texto/lcd/lcd.vhd sub00/vhpl06 1416674843
+EN lcd NULL /home/seba/Documents/shared/lcd/lcd.vhd sub00/vhpl05 1418080946
+EN rom NULL /home/seba/Documents/shared/lcd/rom.vhd sub00/vhpl00 1418080948
+EN lcd_top NULL /home/seba/Documents/shared/lcd/lcd_top.vhd sub00/vhpl07 1418080950
+AR rom rom_imp /home/seba/Documents/shared/lcd/rom.vhd sub00/vhpl01 1418080949
 AR timer behavioral C:/print_texto/lcd/timer.vhd sub00/vhpl03 1416673327
-EN timer NULL C:/print_texto/lcd/timer.vhd sub00/vhpl02 1416674840
+AR lcd_top fsm /home/seba/Documents/shared/lcd/lcd_top.vhd sub00/vhpl08 1418080951
+AR timer data_flow /home/seba/Documents/shared/lcd/timer.vhd sub00/vhpl04 1418080945
+AR lcd fsmd /home/seba/Documents/shared/lcd/lcd.vhd sub00/vhpl06 1418080947
+EN timer NULL /home/seba/Documents/shared/lcd/timer.vhd sub00/vhpl02 1418080944

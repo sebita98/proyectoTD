@@ -1,9 +1,10 @@
 --------------------------------------------------------------------------------
-Release 14.4 Trace  (nt)
+Release 14.4 Trace  (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.4\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n
-3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf
+/opt/Xilinx/14.4/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf -ucf
+lcd.ucf
 
 Design file:              lcd_top.ncd
 Physical constraint file: lcd_top.pcf
@@ -44,11 +45,11 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-lcd_data<0> |    7.487(R)|clk_BUFGP         |   0.000|
-lcd_data<1> |    9.255(R)|clk_BUFGP         |   0.000|
-lcd_data<2> |    9.153(R)|clk_BUFGP         |   0.000|
-lcd_e       |    8.035(R)|clk_BUFGP         |   0.000|
-lcd_rs      |    9.153(R)|clk_BUFGP         |   0.000|
+lcd_data<0> |   10.345(R)|clk_BUFGP         |   0.000|
+lcd_data<1> |   11.585(R)|clk_BUFGP         |   0.000|
+lcd_data<2> |   10.689(R)|clk_BUFGP         |   0.000|
+lcd_e       |    9.798(R)|clk_BUFGP         |   0.000|
+lcd_rs      |   10.832(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -56,18 +57,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.390|         |         |         |
+clk            |    5.406|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat Nov 22 14:49:24 2014 
+Analysis completed Mon Dec  8 20:24:37 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 133 MB
+Peak Memory Usage: 347 MB
 
 
 

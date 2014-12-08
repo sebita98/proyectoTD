@@ -55,6 +55,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="lcd_top.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="lcd_top.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="lcd_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lcd_top_envsettings.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="lcd_top_fpga_editor.log"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="lcd_top_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="lcd_top_map.map" xil_pn:subbranch="Map"/>
@@ -67,6 +68,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="lcd_top_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="lcd_top_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="lcd_top_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="lcd_top_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="lcd_top_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="lcd_top_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lcd_top_vhdl.prj"/>
@@ -119,6 +121,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1416672581" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1416672581">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1416674301" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8977526538419300173" xil_pn:start_ts="1416674301">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -144,7 +147,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1416674844" xil_pn:in_ck="-4863713910573473785" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5718250902941323573" xil_pn:start_ts="1416674837">
+    <transform xil_pn:end_ts="1418080947" xil_pn:in_ck="-4863713910573473785" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7018778562030490583" xil_pn:start_ts="1418080941">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -159,18 +162,17 @@
       <outfile xil_pn:name="lcd_top.stx"/>
       <outfile xil_pn:name="lcd_top.syr"/>
       <outfile xil_pn:name="lcd_top.xst"/>
-      <outfile xil_pn:name="lcd_top_vhdl.prj"/>
       <outfile xil_pn:name="lcd_top_xst.xrpt"/>
       <outfile xil_pn:name="rom.ngr"/>
       <outfile xil_pn:name="timer.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1416674942" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8278306982281480966" xil_pn:start_ts="1416674942">
+    <transform xil_pn:end_ts="1418080966" xil_pn:in_ck="143473320543" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8278306982281480966" xil_pn:start_ts="1418080966">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1416674946" xil_pn:in_ck="7640328182290976351" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7874447592065681145" xil_pn:start_ts="1416674942">
+    <transform xil_pn:end_ts="1418080970" xil_pn:in_ck="853424022465262398" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7874447592065681145" xil_pn:start_ts="1418080966">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -179,7 +181,7 @@
       <outfile xil_pn:name="lcd_top.ngd"/>
       <outfile xil_pn:name="lcd_top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1416674950" xil_pn:in_ck="-7925671482036048895" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1416674946">
+    <transform xil_pn:end_ts="1418081058" xil_pn:in_ck="7818248121340248096" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1418081051">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -192,7 +194,7 @@
       <outfile xil_pn:name="lcd_top_summary.xml"/>
       <outfile xil_pn:name="lcd_top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1416674964" xil_pn:in_ck="-1563122240296327405" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1416674950">
+    <transform xil_pn:end_ts="1418081077" xil_pn:in_ck="-1117352518807770574" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1418081062">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -206,7 +208,7 @@
       <outfile xil_pn:name="lcd_top_pad.txt"/>
       <outfile xil_pn:name="lcd_top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1416674964" xil_pn:in_ck="-7925677107670521991" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1416674962">
+    <transform xil_pn:end_ts="1418081077" xil_pn:in_ck="7818242495705775000" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1418081074">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

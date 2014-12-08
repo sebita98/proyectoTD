@@ -1,18 +1,21 @@
-Release 14.4 - xst P.49d (nt)
+Release 14.4 - xst P.49d (lin64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.04 secs
  
---> Reading design: lcd_top.prj
+--> 
+Reading design: lcd_top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -68,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,13 +107,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/print_texto/lcd/timer.vhd" in Library work.
+Compiling vhdl file "/home/seba/Documents/shared/lcd/timer.vhd" in Library work.
 Architecture data_flow of Entity timer is up to date.
-Compiling vhdl file "C:/print_texto/lcd/lcd.vhd" in Library work.
+Compiling vhdl file "/home/seba/Documents/shared/lcd/lcd.vhd" in Library work.
 Architecture fsmd of Entity lcd is up to date.
-Compiling vhdl file "C:/print_texto/lcd/rom.vhd" in Library work.
+Compiling vhdl file "/home/seba/Documents/shared/lcd/rom.vhd" in Library work.
 Architecture rom_imp of Entity rom is up to date.
-Compiling vhdl file "C:/print_texto/lcd/lcd_top.vhd" in Library work.
+Compiling vhdl file "/home/seba/Documents/shared/lcd/lcd_top.vhd" in Library work.
 Entity <lcd_top> compiled.
 Entity <lcd_top> (Architecture <fsm>) compiled.
 
@@ -149,7 +152,7 @@ Entity <rom> analyzed. Unit <rom> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <rom>.
-    Related source file is "C:/print_texto/lcd/rom.vhd".
+    Related source file is "/home/seba/Documents/shared/lcd/rom.vhd".
     Found 4x4-bit ROM for signal <dato>.
     Summary:
 	inferred   1 ROM(s).
@@ -157,7 +160,7 @@ Unit <rom> synthesized.
 
 
 Synthesizing Unit <timer>.
-    Related source file is "C:/print_texto/lcd/timer.vhd".
+    Related source file is "/home/seba/Documents/shared/lcd/timer.vhd".
     Found 20-bit adder for signal <cont_next$addsub0000> created at line 54.
     Found 20-bit comparator less for signal <cont_next$cmp_lt0000> created at line 54.
     Found 20-bit register for signal <cont_reg>.
@@ -170,7 +173,7 @@ Unit <timer> synthesized.
 
 
 Synthesizing Unit <lcd>.
-    Related source file is "C:/print_texto/lcd/lcd.vhd".
+    Related source file is "/home/seba/Documents/shared/lcd/lcd.vhd".
     Found finite state machine <FSM_0> for signal <est_reg>.
     -----------------------------------------------------------------------
     | States             | 5                                              |
@@ -191,7 +194,7 @@ Unit <lcd> synthesized.
 
 
 Synthesizing Unit <lcd_top>.
-    Related source file is "C:/print_texto/lcd/lcd_top.vhd".
+    Related source file is "/home/seba/Documents/shared/lcd/lcd_top.vhd".
 WARNING:Xst:1780 - Signal <tmr_tick> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_1> for signal <est_reg>.
     -----------------------------------------------------------------------
@@ -208,7 +211,7 @@ WARNING:Xst:1780 - Signal <tmr_tick> is never used or assigned. This unconnected
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 3-bit register for signal <char_reg>.
-    Found 3-bit adder for signal <char_reg$addsub0000> created at line 179.
+    Found 3-bit adder for signal <char_reg$addsub0000> created at line 172.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   3 D-type flip-flop(s).
@@ -482,11 +485,12 @@ Offset:              6.642ns (Levels of Logic = 3)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.18 secs
+Total CPU time to Xst completion: 4.06 secs
  
 --> 
 
-Total memory usage is 202056 kilobytes
+
+Total memory usage is 524716 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

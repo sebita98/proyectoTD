@@ -37,13 +37,6 @@ entity lcd_top is
 		lcd_e : out		std_logic;
 		lcd_data : out	std_logic_vector(3 downto 0)
 	);
-	
-	--attribute chip_pin : string;
-	--attribute chip_pin of clr_L : signal is "100";
-	--attribute chip_pin of clk : signal is "10";
-	--attribute chip_pin of lcd_data : signal is "99, 98, 97, 92, 91, 90, 89, 88";
-	--attribute chip_pin of lcd_e : signal is "87";	
-	--attribute chip_pin of lcd_rs : signal is "86";	
 end entity lcd_top;
 
 architecture fsm of lcd_top is
