@@ -35,7 +35,11 @@ entity lcd_top is
 		clk : in	std_logic;
 		lcd_rs : out	std_logic;
 		lcd_e : out		std_logic;
-		lcd_data : out	std_logic_vector(3 downto 0)
+		lcd_data : out	std_logic_vector(3 downto 0);
+		but1 : in std_logic;
+		but2 : in std_logic;
+		but3 : in std_logic;
+		but4 : in std_logic
 	);
 end entity lcd_top;
 
@@ -54,7 +58,7 @@ architecture fsm of lcd_top is
 	signal lcd_rs_in : std_logic;
 	signal lcd_data_in : std_logic_vector(3 downto 0);
 	signal lcd_tick : std_logic;
-	
+	signal but1out : std_logic;
 	signal tmr_tick : std_logic;
 begin
 	process( clr, clk )
@@ -172,4 +176,6 @@ begin
 	char_next <= ( others => '0' ) when ( est_reg = wait_5 ) else
 					 char_reg + 1 when ( est_reg = texto_inc ) else
 					 char_reg;
+	bot1: entity work.debounce(logic)
+			port map(clk => clk, button =>but1,result=>but1out);
 end architecture fsm;

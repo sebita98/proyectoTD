@@ -4,15 +4,15 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: lcd_top.prj
@@ -113,6 +113,9 @@ Compiling vhdl file "/home/seba/Documents/shared/lcd/lcd.vhd" in Library work.
 Architecture fsmd of Entity lcd is up to date.
 Compiling vhdl file "/home/seba/Documents/shared/lcd/rom.vhd" in Library work.
 Architecture rom_imp of Entity rom is up to date.
+Compiling vhdl file "/home/seba/Documents/shared/lcd/debouncer.vhd" in Library work.
+Entity <debounce> compiled.
+Entity <debounce> (Architecture <logic>) compiled.
 Compiling vhdl file "/home/seba/Documents/shared/lcd/lcd_top.vhd" in Library work.
 Entity <lcd_top> compiled.
 Entity <lcd_top> (Architecture <fsm>) compiled.
@@ -125,6 +128,9 @@ Analyzing hierarchy for entity <lcd_top> in library <work> (architecture <fsm>).
 Analyzing hierarchy for entity <lcd> in library <work> (architecture <fsmd>).
 
 Analyzing hierarchy for entity <rom> in library <work> (architecture <rom_imp>).
+
+Analyzing hierarchy for entity <debounce> in library <work> (architecture <logic>) with generics.
+	counter_size = 19
 
 Analyzing hierarchy for entity <timer> in library <work> (architecture <data_flow>).
 
@@ -144,6 +150,10 @@ Entity <timer> analyzed. Unit <timer> generated.
 Analyzing Entity <rom> in library <work> (Architecture <rom_imp>).
 Entity <rom> analyzed. Unit <rom> generated.
 
+Analyzing generic Entity <debounce> in library <work> (Architecture <logic>).
+	counter_size = 19
+Entity <debounce> analyzed. Unit <debounce> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -157,6 +167,18 @@ Synthesizing Unit <rom>.
     Summary:
 	inferred   1 ROM(s).
 Unit <rom> synthesized.
+
+
+Synthesizing Unit <debounce>.
+    Related source file is "/home/seba/Documents/shared/lcd/debouncer.vhd".
+    Found 1-bit register for signal <result>.
+    Found 20-bit up counter for signal <counter_out>.
+    Found 1-bit xor2 for signal <counter_set>.
+    Found 2-bit register for signal <flipflops>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <debounce> synthesized.
 
 
 Synthesizing Unit <timer>.
@@ -195,7 +217,11 @@ Unit <lcd> synthesized.
 
 Synthesizing Unit <lcd_top>.
     Related source file is "/home/seba/Documents/shared/lcd/lcd_top.vhd".
+WARNING:Xst:647 - Input <but2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <but3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <but4> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <tmr_tick> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <but1out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_1> for signal <est_reg>.
     -----------------------------------------------------------------------
     | States             | 15                                             |
@@ -211,7 +237,7 @@ WARNING:Xst:1780 - Signal <tmr_tick> is never used or assigned. This unconnected
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 3-bit register for signal <char_reg>.
-    Found 3-bit adder for signal <char_reg$addsub0000> created at line 172.
+    Found 3-bit adder for signal <char_reg$addsub0000> created at line 176.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   3 D-type flip-flop(s).
@@ -228,12 +254,17 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  20-bit adder                                          : 1
  3-bit adder                                           : 1
-# Registers                                            : 2
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 5
+ 1-bit register                                        : 3
  20-bit register                                       : 1
  3-bit register                                        : 1
 # Comparators                                          : 2
  20-bit comparator equal                               : 1
  20-bit comparator less                                : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
@@ -273,6 +304,8 @@ Optimizing FSM <lcd_unit/est_reg/FSM> on signal <est_reg[1:3]> with gray encodin
  lcd_3  | 010
  fin    | 110
 --------------------
+WARNING:Xst:1290 - Hierarchical block <bot1> is unconnected in block <lcd_top>.
+   It will be removed from the design.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -284,17 +317,24 @@ Macro Statistics
 # Adders/Subtractors                                   : 2
  20-bit adder                                          : 1
  3-bit adder                                           : 1
-# Registers                                            : 23
- Flip-Flops                                            : 23
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 26
+ Flip-Flops                                            : 26
 # Comparators                                          : 2
  20-bit comparator equal                               : 1
  20-bit comparator less                                : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <bot1/result> of sequential type is unconnected in block <lcd_top>.
+WARNING:Xst:2677 - Node <bot1/flipflops_1> of sequential type is unconnected in block <lcd_top>.
+WARNING:Xst:2677 - Node <bot1/flipflops_0> of sequential type is unconnected in block <lcd_top>.
 
 Optimizing unit <lcd_top> ...
 
@@ -337,7 +377,7 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 8
+# IOs                              : 12
 
 Cell Usage :
 # BELS                             : 162
@@ -371,7 +411,7 @@ Selected Device : 3s500efg320-5
  Number of Slices:                       50  out of   4656     1%  
  Number of Slice Flip Flops:             40  out of   9312     0%  
  Number of 4 input LUTs:                 95  out of   9312     1%  
- Number of IOs:                           8
+ Number of IOs:                          12
  Number of bonded IOBs:                   8  out of    232     3%  
  Number of GCLKs:                         1  out of     24     4%  
 
@@ -484,15 +524,15 @@ Offset:              6.642ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.06 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.52 secs
  
 --> 
 
 
-Total memory usage is 524716 kilobytes
+Total memory usage is 525304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

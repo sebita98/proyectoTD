@@ -1,14 +1,16 @@
 //! **************************************************************************
-// Written by: Map P.49d on Mon Dec 08 20:24:17 2014
+// Written by: Map P.49d on Sat Dec 13 13:52:18 2014
 //! **************************************************************************
 
 SCHEMATIC START;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
 COMP "lcd_e" LOCATE = SITE "M18" LEVEL 1;
 COMP "lcd_data<0>" LOCATE = SITE "R15" LEVEL 1;
 COMP "lcd_data<1>" LOCATE = SITE "R16" LEVEL 1;
 COMP "lcd_data<2>" LOCATE = SITE "P17" LEVEL 1;
 COMP "lcd_data<3>" LOCATE = SITE "M15" LEVEL 1;
 COMP "lcd_rs" LOCATE = SITE "L18" LEVEL 1;
+NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
 SCHEMATIC END;
 
