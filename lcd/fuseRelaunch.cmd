@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/seba/Documents/shared/lcd/tb_lcd_isim_beh.exe" -prj "/home/seba/Documents/shared/lcd/tb_lcd_beh.prj" "work.tb_lcd" 

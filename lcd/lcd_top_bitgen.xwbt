@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/seba/Documents/shared/lcd/lcd_top.ncd
+OUTFILE=/home/seba/Documents/shared/lcd/lcd_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/seba/Documents/shared/lcd
+LICENSE=WebPack
+USER_INFO=208379279_0_0_930

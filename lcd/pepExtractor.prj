@@ -1,0 +1,5 @@
+work	"debouncer.vhd"
+work	"lcd.vhd"
+work	"lcd_top.vhd"
+work	"rom.vhd"
+work	"timer.vhd"

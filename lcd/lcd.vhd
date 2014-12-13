@@ -97,8 +97,8 @@ begin
 			tick => tmr_tick
 		);
 		
-	lcd_time <= std_logic_vector( to_unsigned( 5000, 20 ) ) when ( rs = '1' ) else
-					std_logic_vector( to_unsigned( 500000, 20 ) );
+	lcd_time <= std_logic_vector( to_unsigned( 50, 20 ) ) when ( rs = '1' ) else
+					std_logic_vector( to_unsigned( 5000, 20 ) );
 					
 	
 	lcd_data <= data_in;

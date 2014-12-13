@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/seba/Documents/shared/lcd/impact.xsl
+OUTFILE=/home/seba/Documents/shared/lcd/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/seba/Documents/shared/lcd
+LICENSE=iMPACT
+USER_INFO=iMPACT

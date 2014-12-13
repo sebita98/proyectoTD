@@ -1,0 +1,81 @@
+ISim log file
+Running: /home/seba/Documents/shared/lcd/tb_lcd_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/seba/Documents/shared/lcd/tb_lcd_isim_beh.wdb 
+ISim P.49d (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 150us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 150us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 300us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 151us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 151us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 400us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 1ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# restart
+# run 1ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 0 ps, Instance /tb_lcd/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE

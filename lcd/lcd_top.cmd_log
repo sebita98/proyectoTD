@@ -50,3 +50,38 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc s3e_xc3s500e_fg320.ucf -p xc3s
 map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lcd_top_map.ncd lcd_top.ngd lcd_top.pcf 
 par -w -intstyle ise -ol high -t 1 lcd_top_map.ncd lcd_top.ncd lcd_top.pcf 
 trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf -ucf s3e_xc3s500e_fg320.ucf 
+bitgen -intstyle ise -f lcd_top.ut lcd_top.ncd 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc s3e_xc3s500e_fg320.ucf -p xc3s500e-fg320-5 lcd_top.ngc lcd_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lcd_top_map.ncd lcd_top.ngd lcd_top.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_top_map.ncd lcd_top.ncd lcd_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf -ucf s3e_xc3s500e_fg320.ucf 
+bitgen -intstyle ise -f lcd_top.ut lcd_top.ncd 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc s3e_xc3s500e_fg320.ucf -p xc3s500e-fg320-5 lcd_top.ngc lcd_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lcd_top_map.ncd lcd_top.ngd lcd_top.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_top_map.ncd lcd_top.ncd lcd_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf -ucf s3e_xc3s500e_fg320.ucf 
+bitgen -intstyle ise -f lcd_top.ut lcd_top.ncd 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc s3e_xc3s500e_fg320.ucf -p xc3s500e-fg320-5 lcd_top.ngc lcd_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lcd_top_map.ncd lcd_top.ngd lcd_top.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_top_map.ncd lcd_top.ncd lcd_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf -ucf s3e_xc3s500e_fg320.ucf 
+bitgen -intstyle ise -f lcd_top.ut lcd_top.ncd 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc s3e_xc3s500e_fg320.ucf -p xc3s500e-fg320-5 lcd_top.ngc lcd_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lcd_top_map.ncd lcd_top.ngd lcd_top.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_top_map.ncd lcd_top.ncd lcd_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf -ucf s3e_xc3s500e_fg320.ucf 
+bitgen -intstyle ise -f lcd_top.ut lcd_top.ncd 
+xst -intstyle ise -ifn "/home/seba/Documents/shared/lcd/lcd_top.xst" -ofn "/home/seba/Documents/shared/lcd/lcd_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc s3e_xc3s500e_fg320.ucf -p xc3s500e-fg320-5 lcd_top.ngc lcd_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o lcd_top_map.ncd lcd_top.ngd lcd_top.pcf 
+par -w -intstyle ise -ol high -t 1 lcd_top_map.ncd lcd_top.ncd lcd_top.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml lcd_top.twx lcd_top.ncd -o lcd_top.twr lcd_top.pcf -ucf s3e_xc3s500e_fg320.ucf 

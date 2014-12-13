@@ -31,24 +31,24 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity lcd_top is
 	port(
-		clr_L : in	std_logic;
+		clr : in	std_logic;
 		clk : in	std_logic;
 		lcd_rs : out	std_logic;
 		lcd_e : out		std_logic;
-		lcd_data : out	std_logic_vector(3 downto 0);
-		but1 : in std_logic;
-		but2 : in std_logic;
-		but3 : in std_logic;
-		but4 : in std_logic
+		lcd_data : out	std_logic_vector(3 downto 0)
+--		but1 : in std_logic;
+--		but2 : in std_logic;
+--		but3 : in std_logic;
+--		but4 : in std_logic
 	);
 end entity lcd_top;
+
 
 architecture fsm of lcd_top is
 	type estado is ( inicio, cmd_1, wait_1, cmd_2, wait_2,cmd_3, wait_3,
 							cmd_4, wait_4, cmd_5, wait_5, texto, wait_texto, texto_inc, fin );
 	signal est_reg, est_next : estado;
 
-	signal clr : std_logic;
 	
 	signal char_reg, char_next : unsigned(2 downto 0);
 	
@@ -58,8 +58,17 @@ architecture fsm of lcd_top is
 	signal lcd_rs_in : std_logic;
 	signal lcd_data_in : std_logic_vector(3 downto 0);
 	signal lcd_tick : std_logic;
-	signal but1out : std_logic;
+--	signal but1out : std_logic;
 	signal tmr_tick : std_logic;
+--	signal cmdReset1 : std_logic_vector(3 downto 0) := '0000';
+--	signal cmdReset2 : std_logic_vector(3 downto 0) := '0001';
+--	signal cmd4Bits : std_logic_vector(3 downto 0) := '0010';
+--	signal cmdTrans1 : std_logic_vector(3 downto 0) := '0010';
+--	signal cmdTrans2 : std_logic_vector(3 downto 0) := '1000';
+--	signal cmdIncDir1 : std_logic_vector(3 downto 0) := '0000';
+--	signal cmdIncDir2 : std_logic_vector(3 downto 0) := '0110';
+--	signal cmdON1 : std_logic_vector(3 downto 0) := '0000';
+--	signal cmdON2 : std_logic_vector(3 downto 0) := '1110';
 begin
 	process( clr, clk )
 	begin
@@ -153,7 +162,7 @@ begin
 		);
 		
 	lcd_data_in <= "0000" when ( est_reg = cmd_1 or est_reg = wait_1 ) else
-					"0011" when ( est_reg = cmd_2 or est_reg = wait_2 ) else
+					"0001" when ( est_reg = cmd_2 or est_reg = wait_2 ) else
 					"0000" when ( est_reg = cmd_3 or est_reg = wait_3 ) else
 					"0000" when ( est_reg = cmd_4 or est_reg = wait_4 ) else
 					"0000" when ( est_reg = cmd_5 or est_reg = wait_5 ) else
@@ -171,11 +180,10 @@ begin
 					 '1' when ( est_reg = texto ) else
 					 '0';
 	
-	clr <= not clr_L;
 	
 	char_next <= ( others => '0' ) when ( est_reg = wait_5 ) else
 					 char_reg + 1 when ( est_reg = texto_inc ) else
 					 char_reg;
-	bot1: entity work.debounce(logic)
-			port map(clk => clk, button =>but1,result=>but1out);
+--	bot1: entity work.debounce(logic)
+--			port map(clk => clk, button =>but1,result=>but1out);
 end architecture fsm;

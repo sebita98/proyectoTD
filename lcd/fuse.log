@@ -1,0 +1,29 @@
+Running: /opt/Xilinx/14.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/seba/Documents/shared/lcd/tb_lcd_isim_beh.exe -prj /home/seba/Documents/shared/lcd/tb_lcd_beh.prj work.tb_lcd 
+ISim P.49d (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/seba/Documents/shared/lcd/timer.vhd" into library work
+Parsing VHDL file "/home/seba/Documents/shared/lcd/rom.vhd" into library work
+Parsing VHDL file "/home/seba/Documents/shared/lcd/lcd.vhd" into library work
+Parsing VHDL file "/home/seba/Documents/shared/lcd/lcd_top.vhd" into library work
+Parsing VHDL file "/home/seba/Documents/shared/lcd/tb_lcd.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96548 KB
+Fuse CPU Usage: 1240 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture data_flow of entity timer [timer_default]
+Compiling architecture fsmd of entity lcd [lcd_default]
+Compiling architecture rom_imp of entity rom [rom_default]
+Compiling architecture fsm of entity lcd_top [lcd_top_default]
+Compiling architecture behavior of entity tb_lcd
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable /home/seba/Documents/shared/lcd/tb_lcd_isim_beh.exe
+Fuse Memory Usage: 1192760 KB
+Fuse CPU Usage: 1370 ms
+GCC CPU Usage: 2860 ms

@@ -1,0 +1,5 @@
+vhdl work "timer.vhd"
+vhdl work "rom.vhd"
+vhdl work "lcd.vhd"
+vhdl work "lcd_top.vhd"
+vhdl work "tb_lcd.vhd"
