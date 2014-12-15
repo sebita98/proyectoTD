@@ -58,17 +58,7 @@ architecture fsm of lcd_top is
 	signal lcd_rs_in : std_logic;
 	signal lcd_data_in : std_logic_vector(3 downto 0);
 	signal lcd_tick : std_logic;
---	signal but1out : std_logic;
 	signal tmr_tick : std_logic;
---	signal cmdReset1 : std_logic_vector(3 downto 0) := '0000';
---	signal cmdReset2 : std_logic_vector(3 downto 0) := '0001';
---	signal cmd4Bits : std_logic_vector(3 downto 0) := '0010';
---	signal cmdTrans1 : std_logic_vector(3 downto 0) := '0010';
---	signal cmdTrans2 : std_logic_vector(3 downto 0) := '1000';
---	signal cmdIncDir1 : std_logic_vector(3 downto 0) := '0000';
---	signal cmdIncDir2 : std_logic_vector(3 downto 0) := '0110';
---	signal cmdON1 : std_logic_vector(3 downto 0) := '0000';
---	signal cmdON2 : std_logic_vector(3 downto 0) := '1110';
 begin
 	process( clr, clk )
 	begin

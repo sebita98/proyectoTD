@@ -1,0 +1,10 @@
+Command line:
+   tb_lcd_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63766
+
+Sun Dec 14 21:23:58 2014
+
+
+ Elaboration Time: 0.015601 sec

@@ -1,0 +1,3 @@
+vhdl isim_temp "timer.vhd"
+vhdl isim_temp "lcd.vhd"
+vhdl isim_temp "tb_lcd.vhd"

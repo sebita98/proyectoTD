@@ -1,0 +1,6 @@
+EN lcd NULL C:/proyectoTD/lcdOWN/lcd.vhd sub00/vhpl02 1418603021
+AR lcd behavioral C:/proyectoTD/lcdOWN/lcd.vhd sub00/vhpl03 1418603022
+EN lcd_top NULL C:/proyectoTD/lcdOWN/lcd_top.vhd sub00/vhpl04 1418603023
+AR lcd_top behavioral C:/proyectoTD/lcdOWN/lcd_top.vhd sub00/vhpl05 1418603024
+AR timer data_flow C:/proyectoTD/lcdOWN/timer.vhd sub00/vhpl01 1418603020
+EN timer NULL C:/proyectoTD/lcdOWN/timer.vhd sub00/vhpl00 1418603019

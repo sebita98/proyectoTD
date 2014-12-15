@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/proyectoTD/lcdOWN/timer.xst" -ofn "C:/proyectoTD/lcdOWN/timer.syr" 

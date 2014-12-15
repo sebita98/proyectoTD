@@ -1,0 +1,3 @@
+vhdl work "timer.vhd"
+vhdl work "lcd.vhd"
+vhdl work "lcd_top.vhd"

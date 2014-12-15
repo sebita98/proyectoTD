@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/proyectoTD/lcdOWN/tb_lcd_top_isim_beh.exe" -prj "C:/proyectoTD/lcdOWN/tb_lcd_top_beh.prj" "work.tb_lcd_top" 
