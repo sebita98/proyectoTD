@@ -1,6 +1,10 @@
-EN lcd NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd.vhd sub00/vhpl02 1418691727
-AR lcd behavioral /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd.vhd sub00/vhpl03 1418691728
-EN lcd_top NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd_top.vhd sub00/vhpl04 1418691729
-AR lcd_top behavioral /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd_top.vhd sub00/vhpl05 1418691730
-AR timer data_flow /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/timer.vhd sub00/vhpl01 1418691726
-EN timer NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/timer.vhd sub00/vhpl00 1418691725
+EN lcd NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd.vhd sub00/vhpl02 1418764544
+AR lcd behavioral /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd.vhd sub00/vhpl03 1418764545
+EN rom NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/rom.vhd sub00/vhpl08 1418764546
+EN lcd_top NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd_top.vhd sub00/vhpl04 1418764548
+AR rom rom_imp /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/rom.vhd sub00/vhpl09 1418764547
+EN debounce NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/debouncer.vhd sub00/vhpl06 1418764542
+AR debounce logic /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/debouncer.vhd sub00/vhpl07 1418764543
+AR lcd_top behavioral /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd_top.vhd sub00/vhpl05 1418764549
+AR timer data_flow /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/timer.vhd sub00/vhpl01 1418764541
+EN timer NULL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/timer.vhd sub00/vhpl00 1418764540

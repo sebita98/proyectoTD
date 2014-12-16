@@ -43,7 +43,7 @@ entity lcd is
 end lcd;
 
 architecture Behavioral of lcd is
-	type estado is ( reposo, wait_start, cmd1, wait1, cmd2, wait2, cmd3, wait3, waitComm, cmd4, wait4, setUpper, waitEnUpper, waitEnLower, waitToNext, setLower, setWait, setTick );
+	type estado is ( reposo, wait_start, cmd1, wait1, cmd2, wait2, cmd3, wait3, waitComm, cmd4, wait4, setUpper, waitEnUpper, waitEnLower, waitToNext, setLower, setWait, setTick, waitHoldLower, waitHoldUpper );
 	signal est_reg, est_next : estado;
 	signal tick: std_logic;
 	signal wait_time: std_logic_vector(19 downto 0);
@@ -107,6 +107,10 @@ begin
 				est_next <= waitComm;
 			when waitComm =>		--Espero que me llegue un comando
 				if	(lcd_data_in /= "00000000") then
+					est_next <= waitHoldUpper;
+				end if;
+			when waitHoldUpper =>		--Tiempo de estabilidad antes del en
+				if	(tick = '1') then
 					est_next <= setUpper;
 				end if;
 			when setUpper =>		--Pongo el upper por 12 ciclos
@@ -119,6 +123,10 @@ begin
 				end if;
 			when setWait =>		-- 1us
 				if( tick = '1' ) then
+					est_next <= waitHoldLower;
+				end if;
+			when waitHoldLower =>		--Tiempo de estabilidad antes del en
+				if	(tick = '1') then
 					est_next <= setLower;
 				end if;
 			when setLower =>		--Pongo el lower por 12 ciclos
@@ -154,14 +162,15 @@ begin
 					 std_logic_vector( to_unsigned( 2000, 20 ) ) when ( est_reg=wait3 or est_reg=wait4 or est_reg=waitToNext) else
 					 std_logic_vector( to_unsigned( 50, 20 ) ) when ( est_reg=setWait) else
 					 std_logic_vector( to_unsigned( 1, 20 ) ) when ( est_reg=waitEnUpper or est_reg=waitEnLower ) else
+					 std_logic_vector( to_unsigned( 2, 20 ) ) when ( est_reg=waitHoldUpper or est_reg=waitHoldLower ) else
 					( others => '0' );
 	
 	tmr_clr <= '1' when ( est_reg = reposo ) else
 				  '0';
 	lcd_data <= "0011" when (est_reg=cmd1 or est_reg=cmd2 or est_reg=cmd3) else
 					"0010" when (est_reg=cmd4) else
-					"1111" when (est_reg=setUpper or est_reg=waitEnUpper) else
-					"1111" when (est_reg=setLower or est_reg=waitEnLower) else
+					lcd_data_in(7 downto 4) when (est_reg=setUpper or est_reg=waitEnUpper or est_reg=waitHoldUpper) else
+					lcd_data_in(3 downto 0) when (est_reg=setLower or est_reg=waitEnLower or est_reg=waitHoldLower) else
 					(others => '0');
 end Behavioral;
 

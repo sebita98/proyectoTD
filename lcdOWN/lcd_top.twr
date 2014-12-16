@@ -44,7 +44,7 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-start       |    2.415(R)|    0.117(R)|clk_BUFGP         |   0.000|
+start       |    3.266(R)|    1.414(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -52,12 +52,12 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-lcd_data<0> |    9.034(R)|clk_BUFGP         |   0.000|
-lcd_data<1> |    9.110(R)|clk_BUFGP         |   0.000|
-lcd_data<2> |    8.731(R)|clk_BUFGP         |   0.000|
-lcd_data<3> |    8.710(R)|clk_BUFGP         |   0.000|
-lcd_e       |    9.255(R)|clk_BUFGP         |   0.000|
-lcd_rs      |    8.958(R)|clk_BUFGP         |   0.000|
+lcd_data<0> |   10.454(R)|clk_BUFGP         |   0.000|
+lcd_data<1> |   11.061(R)|clk_BUFGP         |   0.000|
+lcd_data<2> |    9.697(R)|clk_BUFGP         |   0.000|
+lcd_data<3> |   10.201(R)|clk_BUFGP         |   0.000|
+lcd_e       |   10.553(R)|clk_BUFGP         |   0.000|
+lcd_rs      |   10.333(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -65,11 +65,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.749|         |         |         |
+clk            |    6.011|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Dec 15 12:28:15 2014 
+Analysis completed Tue Dec 16 17:19:29 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:

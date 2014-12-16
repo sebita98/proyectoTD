@@ -1,3 +1,5 @@
 vhdl work "timer.vhd"
+vhdl work "rom.vhd"
 vhdl work "lcd.vhd"
+vhdl work "debouncer.vhd"
 vhdl work "lcd_top.vhd"

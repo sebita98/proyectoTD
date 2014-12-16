@@ -1,0 +1,31 @@
+Command line:
+   lcd_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  53587
+
+Tue Dec 16 17:54:05 2014
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 181.686 Meg
+
+ Total Signals          : 82
+ Total Nets             : 264
+ Total Signal Drivers   : 42
+ Total Blocks           : 13
+ Total Primitive Blocks : 11
+ Total Processes        : 33
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 803
+Total Line Count : 139
+Total Line Count : 139
+Total Line Count : 139
+
+ Total Simulation Time: 0.1 sec
+
+ Current Memory Usage: 257.188 Meg
+
+Tue Dec 16 17:56:52 2014
+

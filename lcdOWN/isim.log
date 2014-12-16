@@ -1,6 +1,5 @@
 ISim log file
 Running: /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/tb_lcd_top_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/tb_lcd_top_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim2.wdb.
 ISim P.49d (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -15,18 +14,21 @@ at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."<": metavalu
 at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd_top/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 # restart
-# run 20ms
+# run 30ms
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_lcd_top/uut/txt_unit/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
 at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 at 0 ps, Instance /tb_lcd_top/uut/lcd_unit/tmr_unit/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+# exit 0

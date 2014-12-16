@@ -47,7 +47,11 @@ ARCHITECTURE behavior OF tb_lcd_top IS
          lcd_data : OUT  std_logic_vector(3 downto 0);
          lcd_rs : OUT  std_logic;
          lcd_rw : OUT  std_logic;
-         lcd_e : OUT  std_logic
+         lcd_e : OUT  std_logic;
+			btn1 : in std_logic;
+			btn2 : in std_logic;
+			btn3 : in std_logic;
+			btn4 : in std_logic
         );
     END COMPONENT;
     
@@ -62,6 +66,10 @@ ARCHITECTURE behavior OF tb_lcd_top IS
    signal lcd_rs : std_logic;
    signal lcd_rw : std_logic;
    signal lcd_e : std_logic;
+	signal btn1 : std_logic := '0';
+	signal btn2 : std_logic := '0';
+	signal btn3 : std_logic := '0';
+	signal btn4 : std_logic := '0';
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -76,7 +84,11 @@ BEGIN
           lcd_data => lcd_data,
           lcd_rs => lcd_rs,
           lcd_rw => lcd_rw,
-          lcd_e => lcd_e
+          lcd_e => lcd_e,
+			 btn1 => btn1,
+			 btn2 => btn2,
+			 btn3 => btn3,
+			 btn4 => btn4
         );
 
    -- Clock process definitions
@@ -95,8 +107,11 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 		start <= '1';
-      wait for 90ms;
-
+      wait for 20 ms;
+		btn1 <= '1';
+		wait for 21 us;
+		btn1 <= '0';
+		wait for 20 ms;
       -- insert stimulus here 
 
       wait;

@@ -7,3 +7,8 @@ NET "lcd_data<0>" LOC = "R15" 	| IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW
 NET "lcd_data<1>" LOC = "R16" 	| IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
 NET "lcd_data<2>" LOC = "P17"	| IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
 NET "lcd_data<3>" LOC = "M15"	| IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW ;
+# ==== Pushbuttons (BTN) ====
+NET "button1" LOC = "H13" 	| IOSTANDARD = LVTTL | PULLDOWN ;
+NET "button2" LOC = "V4" 	| IOSTANDARD = LVTTL | PULLDOWN ;
+NET "button3" LOC = "K17" | IOSTANDARD = LVTTL | PULLDOWN ;
+NET "button4" LOC = "D18" 	| IOSTANDARD = LVTTL | PULLDOWN ;
