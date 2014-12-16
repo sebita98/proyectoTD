@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/seba/Documents/proyectoTD/proyectoTD/Torres_1469344/tb_div_36e2_isim_beh.exe" -prj "/home/seba/Documents/proyectoTD/proyectoTD/Torres_1469344/tb_div_36e2_beh.prj" "work.tb_div_36e2" 

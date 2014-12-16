@@ -1,0 +1,386 @@
+Release 14.4 - xst P.49d (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: div_36e2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "div_36e2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "div_36e2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : div_36e2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/seba/Documents/proyectoTD/proyectoTD/Torres_1469344/div_36e2.vhd" in Library work.
+Entity <div_36e2> compiled.
+Entity <div_36e2> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <div_36e2> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <div_36e2> in library <work> (Architecture <behavioral>).
+Entity <div_36e2> analyzed. Unit <div_36e2> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <div_36e2>.
+    Related source file is "/home/seba/Documents/proyectoTD/proyectoTD/Torres_1469344/div_36e2.vhd".
+    Found 12-bit adder for signal <cont_next$addsub0000> created at line 68.
+    Found 12-bit comparator less for signal <cont_next$cmp_lt0000> created at line 68.
+    Found 12-bit register for signal <cont_reg>.
+    Found 1-bit register for signal <est_reg<0>>.
+    Summary:
+	inferred  13 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <div_36e2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 12-bit adder                                          : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 12-bit register                                       : 1
+# Comparators                                          : 1
+ 12-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 12-bit adder                                          : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Comparators                                          : 1
+ 12-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <div_36e2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block div_36e2, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : div_36e2.ngr
+Top Level Output File Name         : div_36e2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 4
+
+Cell Usage :
+# BELS                             : 56
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 11
+#      LUT2                        : 12
+#      LUT3                        : 2
+#      LUT4                        : 3
+#      LUT4_D                      : 1
+#      MUXCY                       : 11
+#      VCC                         : 1
+#      XORCY                       : 12
+# FlipFlops/Latches                : 13
+#      FDE                         : 13
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       16  out of   4656     0%  
+ Number of Slice Flip Flops:             13  out of   9312     0%  
+ Number of 4 input LUTs:                 31  out of   9312     0%  
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    232     1%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 13    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.530ns (Maximum Frequency: 220.729MHz)
+   Minimum input arrival time before clock: 2.700ns
+   Maximum output required time after clock: 6.328ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.530ns (frequency: 220.729MHz)
+  Total number of paths / destination ports: 186 / 12
+-------------------------------------------------------------------------
+Delay:               4.530ns (Levels of Logic = 13)
+  Source:            cont_reg_1 (FF)
+  Destination:       cont_reg_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cont_reg_1 to cont_reg_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  cont_reg_1 (cont_reg_1)
+     LUT1:I0->O            1   0.612   0.000  Madd_cont_next_addsub0000_cy<1>_rt (Madd_cont_next_addsub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Madd_cont_next_addsub0000_cy<1> (Madd_cont_next_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<2> (Madd_cont_next_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<3> (Madd_cont_next_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<4> (Madd_cont_next_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<5> (Madd_cont_next_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<6> (Madd_cont_next_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<7> (Madd_cont_next_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<8> (Madd_cont_next_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Madd_cont_next_addsub0000_cy<9> (Madd_cont_next_addsub0000_cy<9>)
+     MUXCY:CI->O           0   0.052   0.000  Madd_cont_next_addsub0000_cy<10> (Madd_cont_next_addsub0000_cy<10>)
+     XORCY:CI->O           1   0.699   0.426  Madd_cont_next_addsub0000_xor<11> (cont_next_addsub0000<11>)
+     LUT2:I1->O            1   0.612   0.000  cont_next<11>1 (cont_next<11>)
+     FDE:D                     0.268          cont_reg_11
+    ----------------------------------------
+    Total                      4.530ns (3.573ns logic, 0.958ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              2.700ns (Levels of Logic = 2)
+  Source:            syn_clr (PAD)
+  Destination:       est_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: syn_clr to est_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  syn_clr_IBUF (syn_clr_IBUF)
+     INV:I->O              1   0.612   0.357  est_next_0_mux00001_INV_0 (est_next)
+     FDE:D                     0.268          est_reg_0
+    ----------------------------------------
+    Total                      2.700ns (1.986ns logic, 0.714ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12 / 1
+-------------------------------------------------------------------------
+Offset:              6.328ns (Levels of Logic = 3)
+  Source:            cont_reg_6 (FF)
+  Destination:       tick_out (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cont_reg_6 to tick_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  cont_reg_6 (cont_reg_6)
+     LUT4:I0->O            2   0.612   0.532  tick_out_cmp_eq000015 (N2)
+     LUT3:I0->O            1   0.612   0.357  tick_out_cmp_eq000027 (tick_out_OBUF)
+     OBUF:I->O                 3.169          tick_out_OBUF (tick_out)
+    ----------------------------------------
+    Total                      6.328ns (4.907ns logic, 1.421ns route)
+                                       (77.5% logic, 22.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.75 secs
+ 
+--> 
+
+
+Total memory usage is 515272 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

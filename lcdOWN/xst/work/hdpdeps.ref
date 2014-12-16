@@ -1,17 +1,25 @@
-V3 11
-FL C:/proyectoTD/lcdOWN/lcd.vhd 2014/12/14.21:23:33 P.49d
-EN work/lcd 1418603021 FL C:/proyectoTD/lcdOWN/lcd.vhd PB ieee/std_logic_1164 1354696159 \
-      PB ieee/NUMERIC_STD 1354696164
-AR work/lcd/Behavioral 1418603022 \
-      FL C:/proyectoTD/lcdOWN/lcd.vhd EN work/lcd 1418603021 CP work/timer
-FL C:/proyectoTD/lcdOWN/lcd_top.vhd 2014/12/14.16:49:39 P.49d
-EN work/lcd_top 1418603023 FL C:/proyectoTD/lcdOWN/lcd_top.vhd \
+V3 14
+FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd.vhd 2014/12/15.22:01:58 P.49d
+EN work/lcd 1418691727 \
+      FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd.vhd \
       PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
-AR work/lcd_top/Behavioral 1418603024 \
-      FL C:/proyectoTD/lcdOWN/lcd_top.vhd EN work/lcd_top 1418603023 CP work/timer \
-      CP work/lcd
+AR work/lcd/Behavioral 1418691728 \
+      FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd.vhd EN work/lcd 1418691727 \
+      CP work/timer
+FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd_top.vhd 2014/12/15.12:57:39 P.49d
+EN work/lcd_top 1418691729 \
+      FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd_top.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
+AR work/lcd_top/Behavioral 1418691730 \
+      FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/lcd_top.vhd \
+      EN work/lcd_top 1418691729 CP work/timer CP work/lcd
+FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/timer.vhd 2014/12/15.11:25:50 P.49d
+EN work/timer 1418691725 \
+      FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/timer.vhd \
+      PB ieee/std_logic_1164 1354696159 PB ieee/NUMERIC_STD 1354696164
+AR work/timer/data_flow 1418691726 \
+      FL /home/seba/Documents/proyectoTD/proyectoTD/lcdOWN/timer.vhd \
+      EN work/timer 1418691725
+FL C:/proyectoTD/lcdOWN/lcd.vhd 2014/12/14.21:23:33 P.49d
+FL C:/proyectoTD/lcdOWN/lcd_top.vhd 2014/12/14.16:49:39 P.49d
 FL C:/proyectoTD/lcdOWN/timer.vhd 2014/12/13.19:25:09 P.49d
-EN work/timer 1418603019 FL C:/proyectoTD/lcdOWN/timer.vhd PB ieee/std_logic_1164 1354696159 \
-      PB ieee/NUMERIC_STD 1354696164
-AR work/timer/data_flow 1418603020 \
-      FL C:/proyectoTD/lcdOWN/timer.vhd EN work/timer 1418603019

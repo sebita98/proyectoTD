@@ -43,7 +43,7 @@ entity lcd is
 end lcd;
 
 architecture Behavioral of lcd is
-	type estado is ( reposo, wait_start, cmd1, wait1, cmd2, wait2, cmd3, wait3, waitComm, cmd4, wait4, setUpper, waitEnUpper, waitEnLower, waitToNext, setLower, setWait );
+	type estado is ( reposo, wait_start, cmd1, wait1, cmd2, wait2, cmd3, wait3, waitComm, cmd4, wait4, setUpper, waitEnUpper, waitEnLower, waitToNext, setLower, setWait, setTick );
 	signal est_reg, est_next : estado;
 	signal tick: std_logic;
 	signal wait_time: std_logic_vector(19 downto 0);
@@ -99,11 +99,12 @@ begin
 				end if;
 			when wait4 => 			--40us
 				if( tick = '1' ) then
-					est_next <= waitComm;
+					est_next <= setTick;
 				end if;
 				
 			-- ACA SE TERMINO LA CONFIGURACION INICIAL DEL LCD
-		
+			when setTick =>
+				est_next <= waitComm;
 			when waitComm =>		--Espero que me llegue un comando
 				if	(lcd_data_in /= "00000000") then
 					est_next <= setUpper;
@@ -130,7 +131,7 @@ begin
 				end if;
 			when waitToNext =>	-- 40us
 				if( tick = '1' ) then
-					est_next <= waitComm;
+					est_next <= setTick;
 				end if;
 		end case;
 	end process;
@@ -144,7 +145,7 @@ begin
 		);
 	lcd_rw <= '0';
 	lcd_e <= '1' when (est_reg=cmd1 or est_reg=cmd2 or est_reg=cmd3 or est_reg=cmd4 or est_reg=setUpper or est_reg=setLower) else '0';
-	lcd_tick <= '1' when (est_reg=waitComm) else '0';
+	lcd_tick <= '1' when (est_reg=setTick) else '0';
 	
 	wait_time <= std_logic_vector( to_unsigned( 750000, 20 ) ) when ( est_reg=wait_start ) else
 					 std_logic_vector( to_unsigned( 12, 20 ) ) when ( est_reg=cmd1 or est_reg=cmd2 or est_reg=cmd3 or est_reg=cmd3 or est_reg=setLower or est_reg=setUpper) else

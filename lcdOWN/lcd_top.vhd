@@ -119,7 +119,7 @@ begin
 							"00000001" when( est_reg = lcd_clear ) else
 							(others => '0');
 		lcd_rs <= '1' when(est_reg=waitText) else '0';
-		wait_time <= std_logic_vector( to_unsigned( 82000, 20 ) ) when ( est_reg=wait_start ) else
+		wait_time <= std_logic_vector( to_unsigned( 82000, 20 ) ) when ( est_reg=wait_clear ) else
 						(others => '0');
 
 end Behavioral;

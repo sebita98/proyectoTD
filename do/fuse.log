@@ -1,0 +1,22 @@
+Running: /opt/Xilinx/14.4/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/seba/Documents/proyectoTD/proyectoTD/do/tb_isim_beh.exe -prj /home/seba/Documents/proyectoTD/proyectoTD/do/tb_beh.prj work.tb 
+ISim P.49d (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/seba/Documents/proyectoTD/proyectoTD/do/ej2.vhd" into library work
+Parsing VHDL file "/home/seba/Documents/proyectoTD/proyectoTD/do/tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95032 KB
+Fuse CPU Usage: 1010 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity ej2 [ej2_default]
+Compiling architecture behavior of entity tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable /home/seba/Documents/proyectoTD/proyectoTD/do/tb_isim_beh.exe
+Fuse Memory Usage: 1185032 KB
+Fuse CPU Usage: 1050 ms
+GCC CPU Usage: 170 ms
